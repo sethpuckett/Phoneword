@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -12,6 +13,8 @@ namespace Phoneword
     [Activity(Label = "Phoneword", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
+        static readonly List<string> phoneNumbers = new List<string>();
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
